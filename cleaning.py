@@ -45,4 +45,4 @@ def clean_timeseries_data(data_path, label_path, save_data_path, save_label_path
     # Save
     df.to_csv(save_data_path, index=False)
     y.to_csv(save_label_path, index=False)
-    print("✅ Cleaned data saved!")
+    print(" Cleaned data saved!")
