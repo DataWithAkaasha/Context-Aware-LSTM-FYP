@@ -12,10 +12,9 @@
    - [Threshold Optimization](#5-threshold-optimization)
    - [Evaluation](#6-evaluation)
 6. [Results & Performance Analysis](#results--performance-analysis)
-7. [Visual Evaluation](#visual-evaluation)
-8. [Reproducibility](#reproducibility)
-9. [Future Work & Limitations](#future-work--limitations)
-10. [Author](#author)
+7. [Reproducibility](#reproducibility)
+8. [Future Work & Limitations](#future-work--limitations)
+9. [Author](#author)
 ## Project Overview
 This project implements a **context-aware anomaly detection framework** for time series data using a hybrid deep learning approach. The system combines **LSTM networks** with contextual features and dynamic thresholding to detect anomalies in telemetry and sensor data.
 
@@ -79,7 +78,7 @@ Due to dataset size and preprocessing dependencies, the full training pipeline i
 The repository includes the core architecture implementation in:
 
 
-src/models/context_aware_lstm.py
+lstm-example.py
 
 ### 5. Threshold Optimization
 - Use validation set to select optimal F1-score threshold  
@@ -146,24 +145,6 @@ src/models/context_aware_lstm.py
 - Minor precision drop from training to validation/test suggests controlled regularization.
 - No significant overfitting observed.
 - Context integration improves anomaly discrimination capability.
-
----
-
-## Visual Evaluation
-
-### Precision-Recall Curve
-![Precision-Recall Curve](\Users\PMLS\Downloads\precision recall curve lstm.png)
-
-### Confusion Matrices
-
-**Train Set**  
-![Train Confusion Matrix](results/train_confusion.png)
-
-**Validation Set**  
-![Validation Confusion Matrix](results/val_confusion.png)
-
-**Test Set**  
-![Test Confusion Matrix](results/test_confusion.png)
 
 ---
 
